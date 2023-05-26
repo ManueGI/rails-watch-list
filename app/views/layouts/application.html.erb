@@ -11,6 +11,14 @@
   </head>
 
   <body>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%=asset_url("fond.jpg") %>');">
+  <div class="container">
+    <h1>List your favorites movies!</h1>
+    <%= link_to "Add a list", new_list_path, class: "btn btn-primary mt-5"  %>
+    <br>
+    <%= link_to "All lists", lists_path, class: "btn mt-5 all"  %>
+  </div>
+</div>
     <%= yield %>
   </body>
 </html>
